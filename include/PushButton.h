@@ -2,8 +2,7 @@
 #define PUSHBUTTON_H
 #include <pico/stdlib.h>
 #include <stdint.h>
-
-uint64_t millis();
+#include <Millis.h>
 
 class PushButton
 {

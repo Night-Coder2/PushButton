@@ -1,12 +1,12 @@
-set(LED_CPP_CLASS .)
+set(PUSHBUTTON .)
 
 add_library(PushButton
         PushButton.cpp
         )
 
 target_include_directories(PushButton PUBLIC
-        ${LED_CPP_CLASS}
-        ${LED_CPP_CLASS}/include
+        ${PUSHBUTTON}
+        ${PUSHBUTTON}/include
         )
 
-target_link_libraries(PushButton pico_stdlib)
+target_link_libraries(PushButton pico_stdlib Millis)

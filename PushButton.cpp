@@ -1,13 +1,5 @@
 #include "PushButton.h"
 
-uint64_t millis() {
-    static uint64_t start_time_us = 0;
-    if (start_time_us == 0) {
-        start_time_us = time_us_64();
-    }
-    return (uint32_t)((time_us_64() - start_time_us) / 1000);
-}
-
 PushButton::PushButton(uint32_t pin, bool isPullUp,
                        bool internalPullUpActivated)
 {
